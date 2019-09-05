@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Note Taking</title>
+    <link href="./css/Notetaking.css" rel="stylesheet" />
+    <link href="./css/bootstrap.css" rel="stylesheet" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  </head>
+
+  <body class="bg-light" data-gr-c-s-loaded="true" cz-shortcut-listen="true">
+    <div class="container">
+      <div class="py-5 text-center">
+        <h2 id="header">Sehyun's Note</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-md-4 order-md-2 mb-4">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-muted">History</span>
+            <span class="badge badge-secondary badge-pill" id="noteCnt"></span>
+          </h4>
+
+          <form onsubmit="return false;" class="card p-2">
+            <div class="input-group">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="Title"
+                id="txtSearch"
+              />
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary" id="btnSearch">
+                  Search
+                </button>
+              </div>
+              &nbsp;
+              <div class="input-group-append">
+                <button type="submit" class="btn btn-secondary" id="btnAll">
+                  All
+                </button>
+              </div>
+            </div>
+          </form>
+          <br />
+
+          <ul class="list-group mb-3" id="notes">
+          </ul>
+        </div>
+
+        <div class="col-md-8 order-md-1">
+          <div>
+            <h4 style="display: inline-block;" class="mb-3">Note Detail</h4>
+            <button id="new" type="submit" class="btn btn-primary float-right">
+              +
+            </button>
+          </div>
+          <input type="text" id="noteId" hidden />
+          <form>
+            <div class="form-group row">
+              <label for="title" class="col-sm-2 col-form-label">Title</label>
+              <div class="col-sm-10">
+                <input
+                  type="text"
+                  class="form-control"
+                  name="title"
+                  id="title"
+                  placeholder="Title"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="date" class="col-sm-2 col-form-label">Date</label>
+              <div class="col-sm-10">
+                <input type="date" class="form-control" id="date" name="date" />
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="contents" class="col-sm-2 col-form-label"
+                >Contents</label
+              >
+              <div class="col-sm-10">
+                <textarea
+                  class="form-control"
+                  id="contents"
+                  rows="10"
+                  name="contents"
+                ></textarea>
+              </div>
+            </div>
+            <div class="form-group row">
+              <label for="color" class="col-sm-2 col-form-label">Color</label>
+              <div class="col-sm-10">
+                <input
+                  type="color"
+                  class="form-control"
+                  id="color"
+                  name="color"
+                />
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-sm-10">
+                <button id="save" type="submit" class="btn btn-primary">
+                  Save
+                </button>
+                <button id="edit" type="submit" class="btn btn-primary">
+                  Edit
+                </button>
+                <button id="delete" type="submit" class="btn btn-danger">
+                  Delete
+                </button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+      <footer>
+        <br />
+      </footer>
+    </div>
+    <script src="./js/Notetaking.js"></script>
+  </body>
+</html>

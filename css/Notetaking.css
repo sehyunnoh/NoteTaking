@@ -1,0 +1,16 @@
+li {
+  padding-left: 0 !important;
+}
+
+li:hover {
+  cursor: pointer;
+  background: #f8f9fa;
+}
+
+.hide {
+  display: none !important;
+}
+
+.selected {
+  border: 2px solid red !important;
+}
