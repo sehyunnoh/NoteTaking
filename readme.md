@@ -1,4 +1,4 @@
-# Note Taking App
+# [Note Taking App](https://sehyunnoh.github.io/NoteTaking/)
 ## 1. Index Page
 > - save name to session storage
 
